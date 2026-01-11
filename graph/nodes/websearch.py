@@ -1,9 +1,11 @@
-from typing import Any, Dict, List, TypedDict
+from typing import Any, Dict
 
 from langchain_classic.schema import Document
 from langchain_tavily import TavilySearch
 
 from dotenv import load_dotenv
+
+from graph.state import GraphState
 
 load_dotenv()
 
@@ -11,21 +13,6 @@ load_dotenv()
 
 web_search_tool = TavilySearch(max_results=3)
 
-class GraphState(TypedDict):
-    """
-    Represents the state of our graph.
-
-    Attributes:
-        question: question
-        generation: LLM generation
-        web_search: whether to add search
-        documents: list of documents
-    """
-
-    question: str
-    grneration:str
-    web_search: bool
-    documents: List[str]
 
 def web_search(state: GraphState) -> Dict[str, Any]:
     print("---WEB SEARCH---")

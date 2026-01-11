@@ -1008,7 +1008,6 @@ dependencies = [
     { name = "pytest" },
     { name = "python-dotenv" },
     { name = "tavily-python" },
-    { name = "tiktoken" },
 ]
 
 [package.metadata]
@@ -1028,7 +1027,6 @@ requires-dist = [
     { name = "pytest", specifier = ">=9.0.2" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
     { name = "tavily-python", specifier = ">=0.7.17" },
-    { name = "tiktoken", specifier = ">=0.12.0" },
 ]
 
 [[package]]
