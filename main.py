@@ -5,7 +5,7 @@ load_dotenv
 
 def main():
     print("Hello from langchain-course-agentic-rag!")
-    print(app.invoke(input={"question": "What is agent memory?"}))
+    print(app.invoke(input={"question": "What is agent memory?", "documents":[]}))
 
 
 if __name__ == "__main__":
